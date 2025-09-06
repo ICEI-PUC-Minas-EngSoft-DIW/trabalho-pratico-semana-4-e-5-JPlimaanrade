@@ -1,24 +1,27 @@
-/* Global INICIO */
+/* 📣 Global INICIO 📣 */
     *
     {
         margin: 0;
+        font-family: Arial, sans-serif;
         padding: 0;
         box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
     }
-
     body 
     {
-        background-color: grey;
-        font-family: Arial, sans-serif;
+        background-color: #464646;
+        color: #333;
+        line-height: 1.6;
     }
 
-/* Global FIM*/
+/* 📣 Global FIM 📣 */
 
-/* Header INICIO*/
+/* 🟦 Header INICIO 🟦 */
     .cabecalho 
     {
         background-color: #222;
-        color: #fff;
+        color: #dab900;
         text-align: center;
         padding: 20px;
     }
@@ -28,14 +31,8 @@
         margin-bottom: 10px;
         display: inline-block;
     }
-    .logo_objeto 
-    {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 15px;
-    }
-
-    /* Nav INICIO*/
+    
+    /* 🟦🔷 Nav INICIO 🟦🔷*/
         .navegacao 
         {
             display: flex;
@@ -44,33 +41,43 @@
             background-color: rgb(77, 77, 77);
             padding: 10px;
             gap: 10px;
+            flex-wrap: wrap;
+            border-radius: 20px;
         }
 
-        .navegacao .logo 
+        .logo_objeto 
+        {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+        }
+
+        .logo_objeto .logo 
         {
             width: 80px;
             height: 80px;
             border-radius: 10%;
         }
 
+        .menu_links
+        {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         .menu_links a 
         {
             text-decoration: none;
-            color: rgb(255, 255, 255);
+            color: #dab900;
             margin: 0 5px;
         }
 
-        .foto_de_perfil
-        {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-
-        /* Pesquisa INICIO*/
+        /* 🟦🔷🔹 Pesquisa INICIO 🟦🔷🔹 */
             .pesquisa 
             {
                 display: flex;
+                flex-wrap: wrap;
                 gap: 5px;
             }
 
@@ -91,30 +98,66 @@
                 border: none;
             }
 
-        /* Pesquisa FIM*/
+        /* 🟦🔷🔹 Pesquisa FIM 🟦🔷🔹 */
 
-    /* Nav FIM*/
+        .foto_de_perfil_objeto
+        {
 
-/* Header FIM*/
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+        }
 
-/* Main INICIO*/
+        .foto_de_perfil_objeto .foto_de_perfil
+        {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
 
-    .banner 
-    {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        margin-bottom: 20px;
-    }
+    /* 🟦🔷Nav FIM 🟦🔷*/
+
+/* 🟦 Header FIM 🟦 */
+
+/* ⬛ Main INICIO ⬛ */
 
     .tela_principal 
     {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         justify-content:center;
         padding: 20px;
-        background-color: rgb(52, 24, 85);
         background-image: url('Imagens/Airbrush-OBJECT-REMOVER-1757169333530.jpg');
     }
+
+        .banner_e_boas_vindas 
+        {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .banner_e_boas_vindas .banner
+        {
+         
+            width: 100%;
+            max-height: 300px;
+            border-radius: 20px;
+            margin-bottom: 20px; 
+        }
+    
+        .banner_e_boas_vindas .boas_vindas
+        {
+            color: rgb(29, 118, 34);
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
     .postagens 
     {
@@ -123,80 +166,111 @@
         gap: 20px;
         width: 100%;
         max-width: 1200px;
-        /*
-        Ideia de desing!
-
-        max-width: 12000px;/ou 1200px mesmo;
-        background-color: rgb(94, 40, 113);
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
         border-radius: 20px;
-        */
     }
 
     article.post 
-    {
+    { 
         display: flex;
         flex-direction: row;
         background-color: black;
         color: rgb(160, 30, 30);
-        padding: 10px;
+        padding: 8px;
         border-radius: 20px;
         flex: 1 1 40%;
     }
 
-    .ImgPost 
+    .ladodireito 
+    {
+       margin: 5px; 
+    }
+    h3
     {
         width: 100%;
-        max-width: 180px;
-        height: 180px;
+        height: 10%;
+        margin-bottom: 5px;
         margin-bottom: 10px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .ImgPost 
+    {
+        min-width: 180px;
+        min-height: 180px;
+        max-width: 180px;
+        width: auto;
+        height: auto;
         border-radius: 15%;
-        margin-right: 2%;
+        
     }
 
     .conteudoPost 
     {
+        height: 80%;
+        width: 100%;
         padding: 8px;
-        background-color: grey;
+        background-color: rgba(128, 128, 128, 0.89);
         border-radius: 15px;
         overflow: auto;
     }
 
-/* Main FIM*/
+/* ⬛ Main FIM ⬛ */
 
-/* Footer INICIO*/
+/* 🦶 Footer INICIO 🦶 */
 .rodape 
 {
+    margin-top: 5px;
     padding: 15px;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(46, 46, 46);
     color: aqua;
     text-align: center;
-    position: relative;
 }
-/* Footer FIM*/
+.rodape p
+{
+    margin-bottom: 10px;
+}
+.links_do_rodape
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.links_do_rodape a
+{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    color: red;
+    padding: 5px;
+    
+}
+/* 🦶 Footer FIM 🦶 */
 
 /*Breakpoints INICIO*/
- @media screen and(max-width: 1536px) 
+ @media screen and (max-width: 1536px) 
         {
 
         }
- @media screen and(max-width: 1280px) 
+ @media screen and (max-width: 1280px) 
         {
 
         }
- @media screen and(max-width: 1024px) 
+ @media screen and (max-width: 1024px) 
         {
 
         }
- @media screen and(max-width: 768px) 
+ @media screen and (max-width: 768px) 
+        {
+        }
+ @media screen and (max-width: 640px) 
         {
 
         }
- @media screen and(max-width: 640px) 
-        {
-
-        }
- @media screen and(max-width: 480px) 
+ @media screen and (max-width: 480px) 
         {
 
         }
