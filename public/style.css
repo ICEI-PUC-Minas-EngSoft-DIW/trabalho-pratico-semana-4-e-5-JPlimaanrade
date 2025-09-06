@@ -1,127 +1,203 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Global INICIO */
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    background-color: grey;
-    font-family: Arial, sans-serif;
-}
+    body 
+    {
+        background-color: grey;
+        font-family: Arial, sans-serif;
+    }
 
-/* Header */
-.site-header {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+/* Global FIM*/
 
-/* Nav */
-.menu-principal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(77, 77, 77);
-    padding: 10px;
-    gap: 10px;
-}
+/* Header INICIO*/
+    .cabecalho 
+    {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    .Titulo h1 
+    {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .logo_objeto 
+    {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
 
-.menu-principal .logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 10%;
-}
+    /* Nav INICIO*/
+        .navegacao 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(77, 77, 77);
+            padding: 10px;
+            gap: 10px;
+        }
 
-.menu-links a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0 5px;
-}
+        .navegacao .logo 
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 10%;
+        }
 
-.profile-pic{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
+        .menu_links a 
+        {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin: 0 5px;
+        }
 
-/* Formulário de pesquisa com 2 inputs e botão Buscar*/
-.pesquisa {
-    display: flex;
-    gap: 5px;
-}
+        .foto_de_perfil
+        {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
 
-.pesquisa input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
+        /* Pesquisa INICIO*/
+            .pesquisa 
+            {
+                display: flex;
+                gap: 5px;
+            }
 
-.pesquisa button {
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    border: none;
-}
+            .pesquisa input 
+            {
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
 
-/* Main / Posts */
-.container {
-    display: flex;
-    justify-content:center;
-    padding: 20px;
-    background-color: rgb(52, 24, 85);
-}
+            .pesquisa button 
+            {
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #333;
+                color: white;
+                border: none;
+            }
 
-.postagens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    /*
-    Ideia de desing!
+        /* Pesquisa FIM*/
 
-    max-width: 12000px;/ou 1200px mesmo;
-    background-color: rgb(94, 40, 113);
-    padding: 20px;
-    border-radius: 20px;
-    */
-}
+    /* Nav FIM*/
 
-article.post {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: rgb(160, 30, 30);
-    padding: 10px;
-    border-radius: 20px;
-    flex: 1 1 40%;
-}
+/* Header FIM*/
 
-.Imgartigo {
-    width: 100%;
-    max-width: 180px;
-    height: 180px;
-    margin-bottom: 10px;
-    border-radius: 15%;
-    margin-right: 2%;
-}
+/* Main INICIO*/
 
-.content {
-    padding: 8px;
-    background-color: grey;
-    border-radius: 15px;
-    overflow: auto;
-}
+    .banner 
+    {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
 
-/* Footer */
-.site-footer {
+    .tela_principal 
+    {
+        display: flex;
+        justify-content:center;
+        padding: 20px;
+        background-color: rgb(52, 24, 85);
+        background-image: url('Imagens/Airbrush-OBJECT-REMOVER-1757169333530.jpg');
+    }
+
+    .postagens 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        /*
+        Ideia de desing!
+
+        max-width: 12000px;/ou 1200px mesmo;
+        background-color: rgb(94, 40, 113);
+        padding: 20px;
+        border-radius: 20px;
+        */
+    }
+
+    article.post 
+    {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        color: rgb(160, 30, 30);
+        padding: 10px;
+        border-radius: 20px;
+        flex: 1 1 40%;
+    }
+
+    .ImgPost 
+    {
+        width: 100%;
+        max-width: 180px;
+        height: 180px;
+        margin-bottom: 10px;
+        border-radius: 15%;
+        margin-right: 2%;
+    }
+
+    .conteudoPost 
+    {
+        padding: 8px;
+        background-color: grey;
+        border-radius: 15px;
+        overflow: auto;
+    }
+
+/* Main FIM*/
+
+/* Footer INICIO*/
+.rodape 
+{
     padding: 15px;
     background-color: rgb(78, 78, 78);
     color: aqua;
     text-align: center;
     position: relative;
 }
-/*Breakpoints*/
+/* Footer FIM*/
+
+/*Breakpoints INICIO*/
+ @media screen and(max-width: 1536px) 
+        {
+
+        }
+ @media screen and(max-width: 1280px) 
+        {
+
+        }
+ @media screen and(max-width: 1024px) 
+        {
+
+        }
+ @media screen and(max-width: 768px) 
+        {
+
+        }
+ @media screen and(max-width: 640px) 
+        {
+
+        }
+ @media screen and(max-width: 480px) 
+        {
+
+        }
+/*Breakpoints FIM*/
