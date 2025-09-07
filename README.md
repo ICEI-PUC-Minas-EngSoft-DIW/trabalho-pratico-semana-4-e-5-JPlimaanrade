@@ -8,10 +8,10 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Pedro Lima de Andrade.
+- Matricula: 885317
+- Proposta de projeto escolhida: 5. Temas e Conteúdos Associados.
+- Breve descrição sobre seu projeto: Deepwoken Fan Hub será uma aplicação web criada para a comunidade de deepwoken, onde será possivel visualizar informações importantes sobre o jogo, e os jogadores poderao interagir entre si de diversas maneiras.
 
 ## Print da versão responsiva com CSS puro
 
