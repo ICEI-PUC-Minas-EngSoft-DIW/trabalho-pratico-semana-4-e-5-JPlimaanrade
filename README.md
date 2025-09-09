@@ -15,8 +15,33 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+PC:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_44_14.png)
+
+TABLET:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_43_55.png)
+
+MOBILE:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_43_03.png)
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+PC:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_45_00.png)
+
+TABLET:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_45_13.png)
+
+MOBILE:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_45_34.png)
+
+MOBILE com menu aberto:
+
+![alt text](public/Imagens/Prints_Site/screencapture-127-0-0-1-5501-public-index-html-2025-09-09-16_45_43.png)
+
