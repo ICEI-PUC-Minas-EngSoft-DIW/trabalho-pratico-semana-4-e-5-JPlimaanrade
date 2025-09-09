@@ -1,300 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Deepwoken Fan Hub</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <!-- Cabeçalho -->
-        <header class="cabecalho">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepwoken Fan Hub</title>
+    <!--<link rel="stylesheet" href="style.css">-->
 
-            <div class="Titulo">
-                <h1>Deepwoken Fan Hub</h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+
+        <div class="bg-dark text-danger text-center py-2">
+            <h1>Deepwoken Fan Hub</h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="/public/Imagens/Deepwoken logo2.png" alt="Bootstrap" width="50" height="50" class="mx-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#"> Wiki</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#"> Perfil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Community</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Builds</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Lore</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+
+                        
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal do site -->
+    <main class="tela_principal">
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
             </div>
 
-            <!-- Menu de navegação entre as paginas/Âncoras-->
-            <nav class="navegacao">
-
-                <!-- Logo do site -->
-                <div class="logo_objeto">
-                    <a href="index.html"> <img src="/public/Imagens/Deepwoken logo2.png" alt="Logo_Deepwoken_Fan_Club" class="logo"> </a>
-                </div>
-
-                <!-- Menu de navegação padrão  (Wiki; Community; Builds; Lore;) -->
-                <div class="menu_links">
-                    <a href="/public/paginas/Wiki.html">Wiki</a> <!-- https://deepwoken.fandom.com/wiki/Deepwoken_Wiki -->
-                    <a href="/public/paginas/Community.html">Community</a>
-                    <a href="/public/paginas/Builds.html">Builds</a>
-                    <a href="/public/paginas/Lore.html">Lore</a>
-                </div>
-
-                <!-- Barra de Pesquisa e Categoria-->
-                <div class="pesquisa">
-                    <input type="search" name="termo" placeholder="Pesquisar...">
-                    <input type="text" name="categoria" placeholder="Categoria...">
-                    <button>Buscar</button>
-                </div>
-
-                <!-- Foto do usuário com ancora para a pagina perfil -->
-                <div class="foto_de_perfil_objeto">
-                    <a href="/public/paginas/Perfil.html"><img src="Imagens/Maestro_img_perfil.jpg" alt="Foto do Usuário" class="foto_de_perfil"></a>
-                </div>    
-
-            </nav>
-
-        </header>
-
-        <!-- Conteúdo principal do site -->
-        <main class="tela_principal">
-
-            <!--    === Possível menu lateral futuramente ===
-
-            <aside>
-
-                <h2>Menu Lateral</h2>
-
-                <ul class="menu_lateral">
-                    <li><a href="#noticias">Notícias</a></li>
-                    <li><a href="#eventos">Eventos</a></li>
-                    <li><a href="#dicas">Dicas</a></li>
-                    <li><a href="#tutoriais">Tutoriais</a></li>
-                    <li><a href="#fórum">Fórum</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    
-
-                </ul>
-
-            </aside>
-
-            -->
-
-            <div class="ladodireitodatelaprincipal">
-                
-                <div class="banner_e_boas_vindas">
-
-                    <img src="Imagens/BannerIMG.jpg" alt="Banner do site" class="banner">
-
-                    <div class="boas_vindas">
-                        <h2>Bem-vindo ao Deepwoken Fan Hub!</h2>
-                        <p>Seu ponto de encontro para tudo relacionado a Deepwoken. Explore guias, participe da comunidade e descubra o lore do jogo.</p>
-                        <p>Esse é um site feito por apenas uma pessoa atualmente, e conta com<br> 
-                        várias coisas legais! que vale apena você fã de deepwoken dar uma olhadinha!!</p>                    
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/public/Imagens/BannerIMG.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-info bg-dark  rounded-pill p-2">Bem-vindo ao Deepwoken Fan Hub!</h5>
+                        <p class="text-success text-5 bg-dark  rounded-pill p-2">Seu ponto de encontro para tudo relacionado a Deepwoken. Explore guias,
+                            participe da comunidade e descubra o lore do jogo.
+                        Esse é um site feito por apenas uma pessoa atualmente, e conta com<br>
+                        várias coisas legais! que vale apena você fã de deepwoken dar uma olhadinha!!</p>
                     </div>
-                    
                 </div>
+            </div>
+        </div>
 
-                <!--As postagens agrupadas ficam aqui!-->
-                <section class="postagens">
-                    
-                    <h2>Postagens Recentes</h2>
+        <!--As postagens agrupadas ficam aqui!-->
+        <section class="container-fluid bg-success">
 
-                    <!--Postagem KAIDO-->
-                    <article class="post">
+            <h2 class="text-center p-3">Postagens Recentes</h2>
 
-                        <img src="Imagens/Conteudo_posts/wp11599134-deepwoken-wallpapers (1).jpg" alt="Postagem 1" class="ImgPost">
-                        
-                        <div class="ladodireito">
-                            
-                            <div class="caixadotitulo">
+            <div class="row justify-content-center">
+                <!--Postagem KAIDO-->
+                <article class="card col-5 m-2 p-2" style="width: 18rem;">
+                    <img src="Imagens/Conteudo_posts/wp11599134-deepwoken-wallpapers (1).jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaido ?</h5>
+                        <p class="card-text">Embora muitas sejam vistas hoje em dia, a primeira Serpente Terrível nasceu
+                            quando um homem,
+                            conhecido apenas como O Mordomo Louco...
+                        </p>
+                        <a href="#" class="btn btn-primary">Ir para a página</a>
+                    </div>
+                </article>
 
-                                <h3>Kaido ?</h3>
-                            
-                            </div>
-                
-                            <div class="conteudoPost">
+                <!--Postagem DEEP OWL-->
+                <article class="card col-5 m-2 p-2" style="width: 18rem;">
+                    <img src="/public/Imagens/Conteudo_posts/DEEEPowl.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Deep Owl's</h5>
+                        <p class="card-text">As Corujas Profundas chegam a Lumen vindas de uma dimensão inconcebível,
+                            onde normalmente não conseguem se comunicar com o mundo exterior.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ir para a página</a>
+                    </div>
+                </article>
 
-                                <p>
-                                    Embora muitas sejam vistas hoje em dia, a primeira Serpente Terrível nasceu quando um homem,
-                                     conhecido apenas como O Mordomo Louco, devorou ​​o coração de um Ancião Edenquita, 
-                                     inundando sua mente instantaneamente com todas as tragédias que já ocorreram, 
-                                     enchendo-o de pavor e transformando-o na primeira Serpente Terrível. 
-                                     O homem em questão possuía Murmúrio: Ardor, razão pela qual matar uma das Serpentes Terríveis 
-                                     resulta em obtê-lo. Não se sabe de onde as demais vieram ou por que todas elas fornecem Ardor ao morrer. 
-                                     As informações básicas sobre a Serpente Terrível são derivadas principalmente do livro de histórias 
-                                     intitulado Folclore de Lumen: Volume 'Norte'. 
-                                </p>
-                                
-                            </div>
+                <!--Postagem LORE-->
+                <article class="card col-5 m-2 p-2" style="width: 18rem;">
+                    <img src="/public/Imagens/Conteudo_posts/wp11599145-deepwoken-wallpapers.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lore Deepwoken</h5>
+                        <p class="card-text">"Deepdelver" é uma patente especial na União da Ignição para aqueles que se
+                            aprofundam nas profundezas e
+                            provaram seu mérito ajudando os outros.
+                            <a href="#" class="btn btn-primary">Ir para a página</a>
+                    </div>
+                </article>
 
-                        </div>
+                <!--Postagem PVP-->
+                <article class="card col-5 m-2 p-2" style="width: 18rem;">
+                    <img src="/public/Imagens/Conteudo_posts/wp11599208-deepwoken-wallpapers.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Torneio PVP</h5>
+                        <p class="card-text">Faixa de poder - Ao selecionar oponentes, o jogo combinará jogadores que
+                            não terão no máximo 5 níveis de poder de diferença um do outro.
+                            <a href="#" class="btn btn-primary">Ir para a página</a>
+                    </div>
+                </article>
 
-                    </article>
+                <!--Postagem ENFORCER-->
+                </article>
+                <article class="card col-5 m-2 p-2" style="width: 18rem;">
+                    <img src="/public/Imagens/Conteudo_posts/Enforcer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Como matar o Enforcer</h5>
+                        <p class="card-text">O Enforcer é um Mini-Chefe das Profundezas que atua como o penúltimo teste
+                            dos Testes das Profundezas,
+                            sendo um teste difícil para quem não o conhece.
+                            <a href="#" class="btn btn-primary">Ir para a página</a>
+                    </div>
+                </article>
 
-                    <!--Postagem DEEP OWL-->
-                    <article class="post">
-
-                        <img src="/public/Imagens/Conteudo_posts/DEEEPowl.jpg" alt="Postagem 1" class="ImgPost">
-
-                        <div class="ladodireito">
-                                                
-                            <div class="caixadotitulo">
-
-                                <h3>Deep Owl's</h3>
-
-                            </div>
-                                    
-                            <div class="conteudoPost">
-
-                                <p>
-                                    As Corujas Profundas chegam a Lumen vindas de uma dimensão inconcebível, onde normalmente não conseguem se comunicar com o mundo exterior. 
-                                     Isso é alterado pelo Juramento feito entre os Visionshapers e a Mente Ninho. As Corujas Profundas se manifestam em nosso mundo com a 
-                                     capacidade da mente de um Visionshapers de transformar ilusões em realidade.
-                                     A Mente Ninho é a entidade que governa as Corujas Profundas, e é dito que ela é tão antiga quanto o próprio tempo. 
-                                     A Mente Ninho é uma entidade misteriosa, e não se sabe muito sobre ela. 
-                                     O que se sabe é que ela é extremamente poderosa, e que tem um grande interesse em Lumen e seus habitantes.
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                    <!--Postagem LORE-->
-                    <article class="post">
-
-                        <img src="/public/Imagens/Conteudo_posts/wp11599145-deepwoken-wallpapers.jpg" alt="Postagem 1" class="ImgPost">
-
-                        <div class="ladodireito">
-
-                            <div class="caixadotitulo">
-
-                                <h3>Lore Deepwoken</h3>
-
-                            </div>
-                
-                            <div class="conteudoPost">
-
-                                <p>
-                                    "Deepdelver" é uma patente especial na União da Ignição para aqueles que se aprofundam nas profundezas e 
-                                     provaram seu mérito ajudando os outros. Comparável aos Mergulhadores Negros. No entanto, diferentemente 
-                                     dos Mergulhadores Negros, que são reconhecidos por sua força, os "Deepdelver" recebem a patente se 
-                                     comprovarem que darão a vida para ajudar os outros. Provavelmente uma organização socialista, como 
-                                     demonstra o fato de seu grupo ser um sindicato e a descrição de "Arcwarder" fazer referência à citação 
-                                     de Karl Marx "De cada um segundo sua capacidade, a cada um segundo suas necessidades". 
-                                </p>                                
-                            
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                    <!--Postagem PVP-->
-                    <article class="post">
-
-                        <img src="/public/Imagens/Conteudo_posts/wp11599208-deepwoken-wallpapers.jpg" alt="Postagem 1" class="ImgPost">
-
-                        <div class="ladodireito">
-                            
-                            <div class="caixadotitulo">
-
-                                <h3>Torneio PVP</h3>
-
-                            </div>
-                
-                            <div class="conteudoPost">
-
-                                <p>
-                                    Faixa de poder - Ao selecionar oponentes, o jogo combinará jogadores que não terão no máximo 5 níveis de poder de diferença um do outro.<br>
-                                     Uma rodada - Há apenas uma rodada. Matar seu oponente significa vencer a partida e retornar ao lobby de matchmaking.<br>
-                                     1v1, 2v2 e 3v3 - Você pode escolher entre lutar sozinho ou com uma equipe de dois ou três jogadores. (2v2 e 3v3 são desbloqueados no nível 20)<br>
-                                     Eliminação - Morrer remove o jogador da rodada. (Somente 3v3 e 2v2)<br>
-                                     Limitação de ressonância - As ressonâncias são desabilitadas em lutas 1x1 para evitar o possível cenário de ser correspondido 
-                                     com uma ressonância incidente enquanto se tem uma ressonância de suporte.
-                                     (limite removido em 2x2 e 3x3)
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                    <!--Postagem ENFORCER-->
-                    <article class="post">
-
-                        <img src="/public/Imagens/Conteudo_posts/Enforcer.jpg" alt="Postagem 1" class="ImgPost">
-                        
-                        <div class="ladodireito">
-                            
-                            <div class="caixadotitulo">
-
-                                <h3>Como matar o Enforcer</h3>
-
-                            </div>
-                
-                            <div class="conteudoPost">
-
-                                <p>
-                                    O Enforcer é um Mini-Chefe das Profundezas que atua como o penúltimo teste dos Testes das Profundezas, 
-                                     sendo um teste difícil para quem não o conhece. Diz-se que o Enforcer nada mais é do que 
-                                     "uma construção destrutiva, feita para matar aqueles que tentaram escapar das Profundezas", 
-                                     mas suas origens são mais complicadas; de acordo com o texto descritivo das armas do Enforcer, 
-                                     os Enforcers são as almas de pessoas que falharam em seu próprio Teste das Profundezas e foram 
-                                     transformadas (presumivelmente pelas Vozes da Catedral) para serem usadas como um obstáculo no teste 
-                                     do próprio jogador. 
-                                </p>
-                                
-                            </div>
-
-                        </div>
-
-                    </article>
-                
-                    <!--Postagem EVENTO-->
-                    <article class="post">
-
-                        <img src="/public/Imagens/Conteudo_posts/Deepwoken_post.avif" alt="Postagem 1" class="ImgPost">
-
-                        <div class="ladodireito">
-                            
-                            <div class="caixadotitulo">
-
-                                <h3>Evento Especial</h3>
-
-                            </div>
-                
-                            <div class="conteudoPost">
-
-                                <p>
-                                    Eventos mundiais são eventos em todo o jogo que ocorrem em cada servidor uma vez a cada hora real (exatamente às XX:00). 
-                                    A ordem dos eventos é a seguinte: cada hora par (2:00, 4:00, etc.) é um Chefe Mundial (como o Parasol Interluminário no 
-                                    Leste e a Perdição de Caeranthil no Luminante Etreano) e as horas ímpares (3:00, 7:00, etc.) serão sempre o Carnaval de 
-                                    Copas . Cada Luminante terá seus próprios eventos mundiais e todos os servidores desse Luminante terão o mesmo evento.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </section>
+                <!--Postagem EVENTO-->
+                <article class="card col-5 m-2 p-2" style="width: 18rem;">
+                    <img src="/public/Imagens/Conteudo_posts/Deepwoken_post.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento Especial</h5>
+                        <p class="card-text">Eventos mundiais são eventos em todo o jogo que ocorrem em cada servidor
+                            uma vez a cada hora real (exatamente às XX:00).
+                        </p>
+                        <a href="#" class="btn btn-primary">Ir para a página</a>
+                    </div>
+                </article>
 
             </div>
-            
-        </main>
 
-        <!-- Rodapé do site -->
-        <footer>
 
-            <!--Links de redes sociais-->
-            <ul class="links_do_rodape">
-                <li><a href="https://www.instagram.com/joaoo._andrade/">Instagram</a></li>
-                <li><a href="https://github.com/JPlimaanrade">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-lima-de-andrade-ba1a31311/">LinkedIn</a></li>
-            </ul>
+        </section>
 
-            <p> 
-                Desenvolvido por João Pedro Lima de Andrade.<br> 
-                Puc Minas COREU 1° Semestre.<br>
-                © 2025 Deepwoken Fan Hub. Todos os direitos reservados. Projeto não oficial, feito por fã.
-            </p>
-   
-        </footer>
+        </div>
+
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="bg-secondary text-center text-decoration-none p-3" >
+
+        <!--Links de redes sociais-->
+        <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li><a href="https://www.instagram.com/joaoo._andrade/" class="text-decoration-none text-reset mx-2 bg-white p-1 rounded-pill">Instagram</a></li>
+            <li><a href="https://github.com/JPlimaanrade" class="text-decoration-none text-reset mx-2 bg-white p-1 rounded-pill">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-lima-de-andrade-ba1a31311/" class="text-decoration-none text-reset mx-2 bg-white p-1 rounded-pill">LinkedIn</a></li>
+        </ul>
+
+        <p text class="text-white">
+            Desenvolvido por João Pedro Lima de Andrade.<br>
+            Puc Minas COREU 1° Semestre.<br>
+            © 2025 Deepwoken Fan Hub. Todos os direitos reservados. Projeto não oficial, feito por fã.
+        </p>
+
+    </footer>
 
     </body>
 
